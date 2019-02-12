@@ -1,0 +1,10 @@
+mpicc -O3 -Wall -Wextra -o dijkstra_mpi dijkstra_mpi.c
+dijkstra_mpi.c: In function ‘dijkstra’:
+dijkstra_mpi.c:118:11: warning: unused variable ‘ttt’ [-Wunused-variable]
+   float * ttt;
+           ^~~
+[c1:116896] pmix_mca_base_component_repository_open: unable to open mca_pnet_opa: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[c1:116901] pmix_mca_base_component_repository_open: unable to open mca_pnet_opa: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+[c1:116901] mca_base_component_repository_open: unable to open mca_mtl_psm2: libpsm2.so.2: cannot open shared object file: No such file or directory (ignored)
+Operation Time: 0.0001s
+==================end===================

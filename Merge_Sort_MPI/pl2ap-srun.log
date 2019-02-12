@@ -1,0 +1,12 @@
+make: Warning: File `Makefile' has modification time 0.89 s in the future
+mpicc -O3 -Wall -Wextra -o sort_mpi sort_mpi.c
+sort_mpi.c: In function ‘main’:
+sort_mpi.c:245:24: warning: ‘pos_arrays’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+       result[pos_arrays[i]] = vals[i];
+              ~~~~~~~~~~^~~
+sort_mpi.c:179:5: warning: ‘vals’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     free(vals);
+     ^~~~~~~~~~
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Sort Time: 11.1742s
+==================end===================

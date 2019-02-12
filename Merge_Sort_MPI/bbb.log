@@ -1,0 +1,31 @@
+mpicc -O3 -Wall -Wextra -o sort_mpi sort_mpi.c
+sort_mpi.c:72:1: warning: ‘print_numbers’ defined but not used [-Wunused-function]
+ print_numbers(
+ ^~~~~~~~~~~~~
+sort_mpi.c: In function ‘main’:
+sort_mpi.c:158:5: warning: ‘vals’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     free(vals);
+     ^~~~~~~~~~
+b4 6038
+Sort Time: 0.0040s
+result0 6038
+result0 109600
+result0 128132
+result0 285443
+result0 333231
+result0 373434
+result0 387775
+result0 393658
+result0 556555
+result0 587646
+------------------result1 125739
+result1 177740
+result1 192463
+result1 214976
+result1 220835
+result1 272230
+result1 371198
+result1 380253
+result1 426761
+result1 689694
+==================end===================
